@@ -31,8 +31,8 @@ jobs:
         # 构建
       - name: Build
         run: |
-          yarn install
-          yarn build
+          npm install
+          npm run build
 
       # 发布到 gh-page 分支
       - name: Deploy github
