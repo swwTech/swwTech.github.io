@@ -35,11 +35,8 @@ hideRightBar: true
   <br>
   <br>
 
-  <!-- ![5NXUB.png](https://s1.328888.xyz/2022/06/01/5NXUB.png)
-  ![5ET0y.png](https://s1.328888.xyz/2022/06/02/5ET0y.png)
-  ![5EcFk.png](https://s1.328888.xyz/2022/06/02/5EcFk.png) -->
-  ![5NXUB.png](../docs/.vuepress/public/img/1.png) -->
-<!-- ![5N9W3.png](https://s1.328888.xyz/2022/06/01/5N9W3.png) -->
+
+  ![5NXUB.png](../docs/.vuepress/public/img/1.png) 
   ![5NJn4.png](../docs/.vuepress/public/img/2.png)
   ![5N9W3.png](../docs/.vuepress/public/img/3.png)
 
@@ -51,8 +48,6 @@ hideRightBar: true
 
   ![5N9W22.png](../docs/.vuepress/public/img/join.png)
 
-  <!-- ![5EKO3.png](https://s1.328888.xyz/2022/06/02/5EKO3.png)
-  ![5E3tQ.png](https://s1.328888.xyz/2022/06/02/5E3tQ.png) -->
 
 :::
 
