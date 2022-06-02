@@ -68,7 +68,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // },
     // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
-    // pageButton: false, // 是否显示快捷翻页按钮，默认true
+    pageButton: false, // 是否显示快捷翻页按钮，默认true
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
@@ -234,10 +234,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           clientID: '36cc523b5a8a70d603d7',
           clientSecret: 'b0b1fd20363fa3951ebdb42ddc79311ebd2a44d2',
-          repo: 'swwTech/swwTech.github.io', // GitHub 仓库
+          repo: 'swwTech.github.io', // GitHub 仓库
           owner: 'swwTech', // GitHub仓库所有者
           admin: ['swwTech'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
+          distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
           title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
