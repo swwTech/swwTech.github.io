@@ -30,7 +30,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '技术文档',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
       }, 
+      {
+        text: '索引',
+        link: '/archives/',
+        items: [
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '归档', link: '/archives/' },
+        ],
+      },
       { text: 'Markdown', link: 'https://markdown.com.cn/' },
+      
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -41,7 +51,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     editLinks: true, // 启用编辑
     docsBranch:'main',//仓库分支
     editLinkText: '在Github中编辑',
-
+    smoothScroll: true,
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
@@ -66,7 +76,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   showToArticle: false, // 显示到文章页底部，默认true
     //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     // },
-    // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
+    //rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
     pageButton: false, // 是否显示快捷翻页按钮，默认true
 
@@ -155,6 +165,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     'vuepress-plugin-baidu-autopush', // 百度自动推送
 
+    
+
     [
       'vuepress-plugin-baidu-tongji', // 百度统计
       {
@@ -195,6 +207,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       }
     ],
 
+    [
+      'posts-encrypt',
+      {
+        route: '/auth',
+        passwd: 'swwtechsecret',
+        encryptInDev: true,
+        expires: 1000  * 60
+      }
+    ],
+    
     [
       'one-click-copy', // 代码块复制按钮
       {
@@ -265,6 +287,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 监听文件变化并重新构建
   extraWatchFiles: [
     '.vuepress/config.ts',
-    '.vuepress/config/htmlModules.ts',
+    '.vuepress/config/htmlModules.ts'
   ]
 })

@@ -3,14 +3,25 @@
 // 以下注释的变量仅供参考，主题使用的最新变量请查看：https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/theme-vdoing/styles/palette.styl
 
 // // 颜色
+.home-wrapper .card-box {
+  background: none;
+  border-shadow: none;
+  }
+.home-wrapper .banner{
+  background:none !improtant;
+}
+.home-wrapper .banner{ 
+  background: none !important;
+  min-height: 0
+}
 
 $bannerTextColor = rgb(67, 108, 242)// 首页banner区(博客标题)文本颜色
-$accentColor = rgb(105, 197, 255)// 主题色
+$accentColor = rgb(0, 145, 255)// 主题色
 // $activeColor = #ff5722
 // $arrowBgColor = #ccc
 
 // // 布局
- $navbarHeight = 4.6rem
+ $navbarHeight = 4.9rem
 // $sidebarWidth = 18rem
 // $contentWidth = 860px
  $homePageWidth = 1500px
@@ -21,9 +32,9 @@ $accentColor = rgb(105, 197, 255)// 主题色
 
 // // 浅色模式
  .theme-mode-light
-   --bodyBg: #ffffff
-   --mainBg: rgba(255,255,255,0)
-//   --sidebarBg: rgba(255,255,255,.8)
+   --bodyBg: linear-gradient(to bottom right, rgb(254, 255, 250), rgb(230, 244, 252))
+   --mainBg: rgb(255, 255, 255)
+   --sidebarBg: rgba(255,255,255,.8)
 //   --blurBg: rgba(255,255,255,.9)
 //   --textColor: #004050
 //   --textLightenColor: #0085AD
@@ -40,7 +51,7 @@ $accentColor = rgb(105, 197, 255)// 主题色
 // // 深色模式
  .theme-mode-dark
      --bodyBg: rgb(39,39,43)
-     --mainBg: rgba(30,30,34,0)
+     --mainBg: rgb(30, 30, 34)
 //   --sidebarBg: rgba(30,30,34,.8)
 //   --blurBg: rgba(30,30,34,.8)
 //   --textColor: rgb(140,140,150)

@@ -4,7 +4,9 @@
     <div
       class="banner"
       :class="{ 'hide-banner': !showBanner }"
-      :style="bannerBgStyle"
+      :style="
+        background:none
+      "
     >
       <div
         class="banner-conent"
@@ -222,7 +224,7 @@ export default {
         if (this.$themeConfig.bodyBgImg) {
           return ''
         } else {
-          return 'background: var(--mainBg);color: var(--textColor)'
+          return 'background: none'
         }
       } else if (bannerBg.indexOf('background') > -1) { // 自定义背景样式
         return bannerBg
@@ -336,7 +338,12 @@ export default {
 };
 </script>
 
+<style>
+  
+</style>
+
 <style lang="stylus" scoped>
+  
 .home-wrapper
   .banner
     width 100%

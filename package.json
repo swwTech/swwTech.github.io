@@ -2,6 +2,9 @@
   "name": "theme-vdoing-blog",
   "version": "1.0.0",
   "scripts": {
+    "encrypt": "encrypt encrypt --source-dir <YOUR_SOURCE_DIR> --key-file keys.json --temp .temp-encrypt",
+    "decrypt": "encrypt decrypt --source-dir <YOUR_SOURCE_DIR> --key-file keys.json --temp .temp-encrypt",
+    
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
@@ -15,6 +18,7 @@
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "v-dialogs": "^2.1.4",
     "vuepress": "1.9.5",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
@@ -26,5 +30,9 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.11.3",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "@oak-tree-house/vuepress-plugin-encrypt": "^1.0.1",
+    "vuepress-plugin-posts-encrypt": "^0.0.6"
   }
 }
