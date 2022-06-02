@@ -39,7 +39,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
-    docsBranch:'main',
+    docsBranch:'main',//仓库分支
     editLinkText: '在Github中编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
@@ -112,7 +112,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Seewideway.Copyright.By CZH.', // 博客版权信息，支持a标签或换行标签</br>
+        'Seewideway.Copyright.By CZH.<br> Powered by Vuepress.', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
@@ -228,24 +228,24 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     [
-      // 'vuepress-plugin-comment', // 评论
-      // {
-      //   choosen: 'gitalk',
-      //   options: {
-      //     clientID: 'a6e1355287947096b88b',
-      //     clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-      //     repo: 'blog-gitalk-comment', // GitHub 仓库
-      //     owner: 'xugaoyi', // GitHub仓库所有者
-      //     admin: ['xugaoyi'], // 对仓库有写权限的人
-      //     // distractionFreeMode: true,
-      //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
-      //     id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-      //     title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-      //     labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-      //     body:
-      //       '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-      //   },
-      // },
+      'vuepress-plugin-comment', // 评论
+      {
+        choosen: 'gitalk',
+        options: {
+          clientID: '36cc523b5a8a70d603d7',
+          clientSecret: 'b0b1fd20363fa3951ebdb42ddc79311ebd2a44d2',
+          repo: 'blog-gitalk-comment', // GitHub 仓库
+          owner: 'swwTech/swwTech.github.io', // GitHub仓库所有者
+          admin: ['swwTech'], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+          body:
+            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+        },
+      },
     ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
