@@ -234,8 +234,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           clientID: '36cc523b5a8a70d603d7',
           clientSecret: 'b0b1fd20363fa3951ebdb42ddc79311ebd2a44d2',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'swwTech/swwTech.github.io', // GitHub仓库所有者
+          repo: 'swwTech/swwTech.github.io', // GitHub 仓库
+          owner: 'swwTech', // GitHub仓库所有者
           admin: ['swwTech'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
