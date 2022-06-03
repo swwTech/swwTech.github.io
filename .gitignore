@@ -1,6 +1,7 @@
 # npm
 package-lock.json
-
+/keys.json
+/.temp-encrypt
 # yarn
 yarn.lock
 

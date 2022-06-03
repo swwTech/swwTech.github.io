@@ -15,6 +15,71 @@
   min-height: 0
 }
 
+// 修改容器样式
+.theme-mode-dark .custom-block.note{
+  background-color: #012f6b74;
+  border: 2px solid #206aff;
+  border-radius: 10px;
+  color: #b9d0ff;
+  padding: 30px;
+}
+.theme-mode-dark .custom-block.note .custom-block-title{
+  color: #206aff;
+}
+.theme-mode-light .custom-block.note{
+  background-color: rgba(142, 168, 254, 0.548);
+  border: 2px solid #2881ff;
+  border-radius: 10px;
+  color: #1b1b1b;
+  padding: 30px;
+}
+.theme-mode-light .custom-block.note .custom-block-title{
+  color: #206aff;
+}
+
+
+.theme-mode-dark .custom-block.tip{
+  background-color: rgba(11, 124, 43, 0.285);
+  border: 2px solid #0cff79;
+  border-radius: 10px;
+  color: #bdffeb;
+  padding: 30px;
+}
+.theme-mode-dark .custom-block.tip .custom-block-title{
+  color: #0cff79;
+}
+.theme-mode-light .custom-block.tip{
+  background-color: rgba(10, 222, 70, 0.285);
+  border: 2px solid #0cff79;
+  border-radius: 10px;
+  color: #0f0f0f;
+  padding: 30px;
+}
+.theme-mode-light .custom-block.tip .custom-block-title{
+  color: #087c3d;
+}
+.theme-mode-dark .custom-block.warning{
+  background-color: rgba(124, 105, 11, 0.285);
+  border: 2px solid #ffb20d;
+  border-radius: 10px;
+  color: #feffbd;
+  padding: 30px;
+}
+.theme-mode-dark .custom-block.warning .custom-block-title{
+  color: #ffb20d;
+}
+.theme-mode-light .custom-block.warning{
+  background-color: rgba(241, 201, 2, 0.285);
+  border: 2px solid #ffb20d;
+  border-radius: 10px;
+  color: #060606;
+  padding: 30px;
+}
+.theme-mode-light .custom-block.warning .custom-block-title{
+  color: #ffb20d;
+}
+
+
 $bannerTextColor = rgb(67, 108, 242)// 首页banner区(博客标题)文本颜色
 $accentColor = rgb(0, 145, 255)// 主题色
 // $activeColor = #ff5722
@@ -50,8 +115,8 @@ $accentColor = rgb(0, 145, 255)// 主题色
 
 // // 深色模式
  .theme-mode-dark
-     --bodyBg: rgb(39,39,43)
-     --mainBg: rgb(30, 30, 34)
+     --bodyBg: rgb(0, 0, 0)
+     --mainBg: rgb(0, 0, 0)
 //   --sidebarBg: rgba(30,30,34,.8)
 //   --blurBg: rgba(30,30,34,.8)
 //   --textColor: rgb(140,140,150)

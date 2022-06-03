@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-plugin-simple-encrypt",
+  "version": "1.0.0",
+  "description": "a simple encrypt and decrypt for vuepress",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terwer/vuepress-plugin-simple-encrypt.git"
+  },
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "vuepress"
+  ],
+  "author": "terwer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terwer/vuepress-plugin-simple-encrypt/issues"
+  },
+  "homepage": "https://github.com/terwer/vuepress-plugin-simple-encrypt#readme"
+}

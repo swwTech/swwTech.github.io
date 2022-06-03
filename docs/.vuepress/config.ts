@@ -77,7 +77,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     // },
     //rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
-    // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
+    sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
     pageButton: false, // 是否显示快捷翻页按钮，默认true
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
@@ -164,7 +164,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   plugins: <UserPlugins>[
 
     'vuepress-plugin-baidu-autopush', // 百度自动推送
-
+    
+    [
+      require('../../pkg/vuepress-plugin-simple-encrypt'), // 主要用于文章部分加密
+      {
+        contentTitle: '加密内容',
+        unencryptedText: '未加密内容',
+        encryptedText: '该内容已加密',
+        decryptedText: '文章已成功解密。',
+        decryptButtonText: '查看',
+        decryptFailText: '密码错误!',
+        unencryptedIcon: undefined,
+        encryptedIcon: undefined,
+        decryptedIcon: undefined
+      }
+    ],
     
 
     [
@@ -213,10 +227,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         route: '/auth',
         passwd: 'swwtechsecret',
         encryptInDev: true,
-        expires: 1000  * 60
+        expires: 1000  * 60,
+        template: resolve(__dirname, './public/etpl.html')
       }
     ],
-    
+
     [
       'one-click-copy', // 代码块复制按钮
       {

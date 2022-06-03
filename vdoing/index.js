@@ -87,28 +87,28 @@ module.exports = (options, ctx) => {
       ['container', {
         type: 'note',
         defaultTitle: {
-          '/': '笔记',
+          '/': 'NOTE',
           '/en/': 'NOTE'
         }
       }],
       ['container', {
         type: 'tip',
         defaultTitle: {
-          '/': '提示',
+          '/': 'TIP',
           '/en/': 'TIP'
         }
       }],
       ['container', {
         type: 'warning',
         defaultTitle: {
-          '/': '注意',
+          '/': 'WARNING',
           '/en/': 'WARNING'
         }
       }],
       ['container', {
         type: 'danger',
         defaultTitle: {
-          '/': '警告',
+          '/': 'WARNING',
           '/en/': 'WARNING'
         }
       }],
@@ -126,7 +126,7 @@ module.exports = (options, ctx) => {
         before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
         after: () => '</details>\n',
         defaultTitle: {
-          '/': '点击查看',
+          '/': 'DETAILS',
           '/en/': 'DETAILS'
         }
       }],
