@@ -8,7 +8,7 @@ heroText: 四外维科技有限公司
 bannerBg: none
 postList: none
 hideRightBar: true
-# auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+
 
 # features: # 可选的
 #   - title: 前端
@@ -27,31 +27,31 @@ hideRightBar: true
 
 ::: center
 
-  # 科技新星 大有可维
-  ### 我们致力于打造校园社交的“平行时空”
-  ### 在这里，每个人都能大胆发声，每个想法都将被看见。
-  ### 在这里，在这个熟悉而陌生的环境里，你将发现新的可能，探索新的方向
+# 科技新星 大有可维
+
+### 我们致力于打造校园社交的“平行时空”
+
+### 在这里，每个人都能大胆发声，每个想法都将被看见
+
+### 在这里，在这个熟悉而陌生的环境里，你将发现新的可能，探索新的方向
+
   <br>
   <br>
   <br>
 
-
-  ![5NXUB.png](../docs/.vuepress/public/img/1.png) 
+  ![5NXUB.png](../docs/.vuepress/public/img/1.png)
   ![5NJn4.png](../docs/.vuepress/public/img/2.png)
   ![5N9W3.png](../docs/.vuepress/public/img/3.png)
 
   <br>
 
-  ### 产品矩阵
+### 产品矩阵
 
   ![5N9W2.png](../docs/.vuepress/public/img/4.png)
 
   ![5N9W22.png](../docs/.vuepress/public/img/join.png)
 
-
 :::
-
-
 
 <!-- 设置circle透明度为0.5 -->
 <html>
@@ -122,5 +122,3 @@ hideRightBar: true
 
  </style>
 </html>
-
-
